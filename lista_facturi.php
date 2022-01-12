@@ -7,13 +7,6 @@ check_session(); ?>
 <div class="col-xs-12" style="height:30px;"></div>
 <h3>Lista Facturi</h3>
 
-<?php 
-#daca este primit un mesaj, il afisam
-if (isset($_GET['msg'])) { ?>
-    <div class="alert alert-success" role="alert">
-        <?= $_GET['msg'] ?>
-    </div>
-<?php } ?>
 <div class="col-xs-12" style="height:30px;"></div>
 <table class="table table-hover">
     <thead>
@@ -24,7 +17,6 @@ if (isset($_GET['msg'])) { ?>
             <th scope="col">Detalii</th>
             <th scope="col">Valoare</th>
             <th scope="col">Vizualizare</th>
-            <!-- <th scope="col">Modifica</th> -->
         </tr>
     </thead>
     <tbody>
@@ -43,7 +35,6 @@ if (isset($_GET['msg'])) { ?>
                 <td><?= $factura['Detalii']; ?></td>
                 <td><?= $factura['Valoare']; ?></td>
                 <td><a href="detalii_factura.php?id=<?=$factura['factura_id'];?>" class="btn btn-primary active" role="button" aria-pressed="true">Vizualizare</a></td>
-                <!-- <td><a href="#" class="btn btn-warning active" role="button" aria-pressed="true">Modifica</a></td> -->
             </tr>
 
         <?php

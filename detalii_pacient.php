@@ -9,15 +9,8 @@ check_session(); ?>
 <h3>Detalii pacient</h3>
 <div class="col-xs-12" style="height:30px;"></div>
 <?php 
-
 $id = $_GET['id'];
-
-#daca este primit un mesaj, il afisam
-if (isset($_GET['msg'])) { ?>
-    <div class="alert alert-success" role="alert">
-        <?= $_GET['msg'] ?>
-    </div>
-<?php } ?>
+?>
 
 <a href="add_consultatie.php?id=<?=$id?>" class="btn btn-primary active" role="button" aria-pressed="true">Adauga consultatie</a>
 <a href="add_internare.php?id=<?=$id?>" class="btn btn-info active" role="button" aria-pressed="true">Adauga internare</a>
@@ -61,7 +54,7 @@ $pacient = $ret->fetch_assoc();
             <th scope="col">Internare</th>
             <th scope="col">Pret</th>
             <th scope="col">Fisa</th>
-            <th scope="col">Modifica</th>
+            <!-- <th scope="col">Modifica</th> -->
         </tr>
     </thead>
     <tbody>
@@ -79,7 +72,7 @@ $pacient = $ret->fetch_assoc();
                 <td><?=($consultatie['Internare']==1)?"DA":"NU"; ?></td>
                 <td><?= $consultatie['Pret_consultatie']; ?></td>
                 <td><a href="#" class="btn btn-info active" role="button" aria-pressed="true">Fisa</a></td>
-                <td><a href="#" class="btn btn-warning active" role="button" aria-pressed="true">Modifica</a></td>
+                <!-- <td><a href="#" class="btn btn-warning active" role="button" aria-pressed="true">Modifica</a></td> -->
             </tr>
 
         <?php
@@ -97,7 +90,7 @@ $pacient = $ret->fetch_assoc();
             <th scope="col">Data checkout</th>
             <th scope="col">Camera</th>
             <th scope="col">Pat</th>
-            <th scope="col">Modifica</th>
+            <!-- <th scope="col">Modifica</th> -->
         </tr>
     </thead>
     <tbody>
@@ -113,7 +106,7 @@ $pacient = $ret->fetch_assoc();
                 <td><?= $internare['Data_checkout']; ?></td>
                 <td><?= $internare['Camera']; ?></td>
                 <td><?= $internare['Pat']; ?></td>
-                <td><a href="#" class="btn btn-warning active" role="button" aria-pressed="true">Modifica</a></td>
+                <!-- <td><a href="#" class="btn btn-warning active" role="button" aria-pressed="true">Modifica</a></td> -->
             </tr>
 
         <?php
@@ -131,7 +124,7 @@ $pacient = $ret->fetch_assoc();
             <th scope="col">Detalii</th>
             <th scope="col">Valoare</th>
             <th scope="col">Vizualizare</th>
-            <th scope="col">Modifica</th>
+            <!-- <th scope="col">Modifica</th> -->
         </tr>
     </thead>
     <tbody>
@@ -149,7 +142,7 @@ $pacient = $ret->fetch_assoc();
                 <td><?= $factura['Detalii']; ?></td>
                 <td><?= $factura['Valoare']; ?></td>
                 <td><a href="detalii_factura.php?id=<?=$factura['factura_id'];?>" class="btn btn-info active" role="button" aria-pressed="true">Vizualizare</a></td>
-                <td><a href="#" class="btn btn-warning active" role="button" aria-pressed="true">Modifica</a></td>
+                <!-- <td><a href="#" class="btn btn-warning active" role="button" aria-pressed="true">Modifica</a></td> -->
             </tr>
 
         <?php
@@ -165,7 +158,7 @@ $pacient = $ret->fetch_assoc();
             <th scope="col">Numar factura</th>
             <th scope="col">Data</th>
             <th scope="col">Valoare</th>
-            <th scope="col">Modifica</th>
+            <!-- <th scope="col">Modifica</th> -->
         </tr>
     </thead>
     <tbody>
@@ -181,7 +174,7 @@ $pacient = $ret->fetch_assoc();
                 <td><?= $plata['Numar']; ?></td>
                 <td><?= $plata['Data']; ?></td>
                 <td><?= $plata['Valoare']; ?></td>
-                <td><a href="#" class="btn btn-warning active" role="button" aria-pressed="true">Modifica</a></td>
+                <!-- <td><a href="#" class="btn btn-warning active" role="button" aria-pressed="true">Modifica</a></td> -->
             </tr>
 
         <?php

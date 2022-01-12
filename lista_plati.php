@@ -6,13 +6,7 @@ include 'include/menu.php';
 check_session(); ?>
 <div class="col-xs-12" style="height:30px;"></div>
 <h3>Lista Plati</h3>
-<?php 
-#daca este primit un mesaj, il afisam
-if (isset($_GET['msg'])) { ?>
-    <div class="alert alert-success" role="alert">
-        <?= $_GET['msg'] ?>
-    </div>
-<?php } ?>
+
 <div class="col-xs-12" style="height:30px;"></div>
 <table class="table table-hover">
     <thead>

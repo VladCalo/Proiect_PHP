@@ -34,7 +34,6 @@ if (isset($_GET['msg'])) { ?>
   <div class="col-md-4">
       <h3><p class="text-center">FACTURA</p></h3>
       <p class="text-center">Seria si numarul facturii: MC-<?=$factura['Numar']?><br>
-    Data facturii: <?=$factura['Numar']?><br>
     Termen de plata: 30 zile</p>
   </div>
   <div class="col-md-4">

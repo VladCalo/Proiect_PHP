@@ -7,20 +7,14 @@ check_session(); ?>
 <div class="col-xs-12" style="height:30px;"></div>
 <h3>Lista Medici</h3>
 <div class="col-xs-12" style="height:30px;"></div>
-<?php 
-#daca este primit un mesaj, il afisam
-if (isset($_GET['msg'])) { ?>
-    <div class="alert alert-success" role="alert">
-        <?= $_GET['msg'] ?>
-    </div>
-<?php } ?>
+
 
 <a href="add_medic.php" class="btn btn-primary active" role="button" aria-pressed="true">Adauga medic nou</a>
 <div class="col-xs-12" style="height:30px;"></div>
 <table class="table table-hover">
     <thead>
         <tr>
-            <th scope="col">#</th>
+            <!-- <th scope="col">#</th> -->
             <th scope="col">Nume</th>
             <th scope="col">Prenume</th>
             <th scope="col">Specialitate</th>
@@ -36,7 +30,7 @@ if (isset($_GET['msg'])) { ?>
             $medic = $ret->fetch_assoc();
         ?>
             <tr>
-                <td><?= $medic['medic_id']; ?></td>
+                <!-- <td><?= $medic['medic_id']; ?></td> -->
                 <td><strong><?= $medic['Nume']; ?></strong></td>
                 <td><?= $medic['Prenume']; ?></td>
                 <td><?= $medic['Specialitate']; ?></td>

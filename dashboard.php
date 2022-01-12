@@ -56,7 +56,7 @@ $total_plati = sum_plati ($conn);
         <div class="card" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">Facturi <span class="badge badge-primary"><?=$nr_facturi;?></span></h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Lista facturilor si optiunea de adugare factura</p>
                 <a href="lista_facturi.php" class="card-link">Lista facturi</a>
                 <a href="add_factura.php" class="card-link">Adaugare factura</a>
             </div>
@@ -66,7 +66,7 @@ $total_plati = sum_plati ($conn);
         <div class="card" style="width: 18rem;">
             <div class="card-body">
                 <h5 class="card-title">Plati  <span class="badge badge-primary"><?=$nr_plati;?></span></h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <p class="card-text">Lista platilor si optiunea de adugare plata</p>
                 <a href="lista_plati.php" class="card-link">Lista plati</a>
                 <a href="add_plata.php" class="card-link">Adaugare plata</a>
             </div>
